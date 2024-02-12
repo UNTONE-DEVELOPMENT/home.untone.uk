@@ -196,3 +196,14 @@ a {
     height: 22px;
 }
 
+
+.eref-bar {
+    background-color: #201515;
+    border-bottom: 2px solid #ff0037;
+    color: white;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
