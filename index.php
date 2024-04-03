@@ -5,7 +5,7 @@ $erefs = [
 ];
 
 if(isset($_GET['eref'])) {
-	if(in_array($_GET['eref'], $erefs)) {
+	if(array_key_exists($_GET['eref'], $erefs)) {
 	    $eref = $erefs[$_GET['eref']];
 	}
 }
@@ -23,19 +23,19 @@ if(isset($_GET['eref'])) {
 
 
 <title>UNTONE</title>
-    <link type="text/css" rel="stylesheet" href="https://id.untone.uk/css/global.css">
-    <link type="text/css" rel="stylesheet" href="main.css">
-    <link rel="stylesheet" type="text/css" href="https://shared.untone.uk/share.css">
+    <link type="text/css" rel="stylesheet" href="https://id.untone.uk/css/global.css?v2">
+    <link type="text/css" rel="stylesheet" href="main.css?v2">
+    <link rel="stylesheet" type="text/css" href="https://shared.untone.uk/share.css?v2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
         rel="stylesheet">
 
         <script rel="preload" src="https://kit.fontawesome.com/91ad005f46.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="theme_dark">
+<body class="theme_dark" style="display: none;">
     <?php
     if($eref != "") {
         ?>
@@ -50,14 +50,16 @@ if(isset($_GET['eref'])) {
     </div>
     <div class="page">
         <div class="page-header">
-            <h1>Hi, we’re UNTONE.</h1>
-            <h3>We make games, websites, music, and more.</h3>
+            <h1>Hi, we’re <strong>UNTONE</strong></h1>
+            <h3>We're a small team of people from the music industry to web development making cool projects across the internet</h3>
+            <h3>Please have a look at our various projects <span class="desktop">on the right</span><span class="mobile">down below</span>!</h3>
         </div>
         <div class="items">
             <div class="items-1w">
                 <a href="https://music.untone.uk" class="item" style="--img: url('img/item/untone-music-cover.png')">
                     <div class="background"></div>
                     <img src="img/item/untone-music.svg">
+                    <div class="info">A modern record label publishing a wide range of fun and exciting genres</div>
                 </a>
             </div>
 
@@ -66,10 +68,12 @@ if(isset($_GET['eref'])) {
                 <a href="https://id.untone.uk" class="item" style="--img: url('img/item/untone-id-cover.png')">
                     <div class="background"></div>
                     <img src="img/item/untone-id.svg">
+                    <div class="info">A simple login solution for all UNTONE products</div>
                 </a>
                 <a href="https://cubey.cc" class="item" style="--img: url('img/item/cubey-cover.png')">
                     <div class="background"></div>
                     <img src="img/item/cubey.svg">
+                    <div class="info">A fun retro platformer game, jump around and get the keys!</div>
                 </a>
             </div>
         </div>
