@@ -82,13 +82,13 @@ html {
     flex-direction: column;
     position: relative;
     transition: all 0.2s ease;
-    z-index: 2;
+    z-index: 20;
     padding: 30px;
     text-decoration: none;
 }
 
 .item .background {
-
+    background-color: #221f1f !important;
     background: var(--img);
     background-position: center;
     background-size: cover;
@@ -116,7 +116,7 @@ html {
 .item .info {
     padding: 15px;
     margin: -15px;
-    background-color: #161414;
+    background: linear-gradient(to right, #161414, #16141422);
     margin-top: auto;
 }
 
@@ -145,6 +145,12 @@ html {
 .item:hover {
     transform: scale(1.01);
 
+}
+.items-1w {
+    margin-top: 20px;
+}
+.items-1w:first-child {
+    margin-top: 0px;
 }
 
 .items-2w {

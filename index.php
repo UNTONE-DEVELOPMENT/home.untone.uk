@@ -56,10 +56,17 @@ if(isset($_GET['eref'])) {
         </div>
         <div class="items">
             <div class="items-1w">
-                <a href="https://music.untone.uk" class="item" style="--img: url('img/item/untone-music-cover.png')">
+                <a href="https://music.untone.uk" class="item" style="--img: url('img/item/untone-music-cover.png'); height: 350px">
                     <div class="background"></div>
                     <img src="img/item/untone-music.svg">
                     <div class="info">A modern record label publishing a wide range of fun and exciting genres</div>
+                </a>
+            </div>
+            <div class="items-1w">
+                <a href="https://anthera.art/home" class="item" style="--img: url('img/item/anthera-cover.png'); height: 250px">
+                    <div class="background"></div>
+                    <img src="img/item/anthera.svg">
+                    <div class="info">A modern art sharing website with unique features and a modern design</div>
                 </a>
             </div>
 
