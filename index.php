@@ -54,7 +54,7 @@ if (isset($_GET['eref'])) {
         </div>
         <div class="items">
             <div class="items-1w">
-                <a href="https://music.untone.uk" class="item" style="--img: url('img/item/untone-music-cover.png'); height: 350px">
+                <a href="https://untonemusic.com" class="item" style="--img: url('img/item/untone-music-cover.png'); height: 350px">
                     <div class="background"></div>
                     <img src="img/item/untone-music.svg" alt="UNTONE Music">
                     <div class="info">A modern record label publishing a wide range of fun and exciting genres</div>
